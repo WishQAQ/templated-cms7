@@ -1,0 +1,6 @@
+INSERT INTO `dede_addonarticle19` VALUES('27','25','','','','127.0.0.1','1M','通用','#');
+INSERT INTO `dede_addonarticle19` VALUES('28','25','','','','127.0.0.1','1M','通用','#');
+INSERT INTO `dede_addonarticle19` VALUES('29','25','','','','127.0.0.1','1M','通用','#');
+INSERT INTO `dede_addonarticle19` VALUES('30','25','','','','127.0.0.1','1M','通用','#');
+INSERT INTO `dede_addonarticle19` VALUES('31','25','','','','127.0.0.1','1M','通用','#');
+INSERT INTO `dede_addonarticle19` VALUES('32','25','','','','127.0.0.1','1M','通用','#');

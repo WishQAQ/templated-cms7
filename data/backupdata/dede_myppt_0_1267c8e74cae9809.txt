@@ -1,0 +1,4 @@
+INSERT INTO `dede_myppt` VALUES('1','1','1','夏炎北半球 自由厦门行','Independent travel to Xiamen','/uploads/banner/banner1.jpg','#');
+INSERT INTO `dede_myppt` VALUES('2','1','2','春暖南半球 惠享澳洲旅','Enjoy Australia trip to Australia','/uploads/banner/banner2.jpg','javascript:;');
+INSERT INTO `dede_myppt` VALUES('3','2','1','夏炎北半球 自由厦门行','Independent travel to Xiamen','/uploads/banner/wapbtn1.jpg','#');
+INSERT INTO `dede_myppt` VALUES('4','2','2','春暖南半球 惠享澳洲旅','Enjoy Australia trip to Australia','/uploads/banner/wapbtn2.jpg','javascript:;');

@@ -1,0 +1,31 @@
+<div class="main_sider fl">
+  <div class="pcla">
+    <div class="tl-a">
+      <h2 class="png">产品分类<span>CATEGORY</span></h2>
+    </div>
+    <div class="pcla-con">
+      <ul>
+        {dede:channel type='son' typeid='2' currentstyle="
+        <li class='pcla-son'><a href='~typelink~'>~typename~</a></li>
+        "}
+        <li class="pcla-son"> <a href='[field:typeurl/]' title="[field:typename/]">[field:typename/]</a> </li>
+        {/dede:channel}
+      </ul>
+    </div>
+  </div>
+  <!--pcla-->
+  <div class="icontact fl">
+    <div class="tl-a">
+      <h2 class="png">联系我们<span>CONTACT</span></h2>
+    </div>
+    <div class="icontact-con"> <img src="/skin/images/img4.jpg" width="227" height="272"/> 全国服务热线：<br/>
+      <span>{dede:global.cfg_tel/}</span><br/>
+      地	址：{dede:global.cfg_add/}<br/>
+      电	话：{dede:global.cfg_tel/}<br/>
+      传	真：{dede:global.cfg_fax/}<br/>
+      邮	箱：{dede:global.cfg_email/}<br/>
+    </div>
+    <div class="icontact-more fr">{dede:type typeid='12'} <a href="[field:typelink/]" title = "查看详情">查看详细 >></a>{/dede:type}</div>
+  </div>
+  <!--icontact--> 
+</div>

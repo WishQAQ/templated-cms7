@@ -1,0 +1,36 @@
+<div class="header">
+<div class="top-bg">
+<div class="top-slogan-bg png"></div>
+<div class="w980 top">
+<div class="top_sider fl">
+  <div class="logo png"><a href="/" title = "{dede:global.cfg_webname/}"><img src="/skin/images/img2.png" width="300" height="70" style="padding-top: 50px"/></a></div>
+  <ul class="nav">
+    <li class="n_son"><a href="index.php" title = "网站首页">网站首页</a></li>
+    {dede:channel type='top' currentstyle="
+    <li class='n_son'><a href='~typelink~'>~typename~</a></li>
+    "}
+    <li class="n_son"><a href="[field:typeurl/]" title ="[field:typename/]">[field:typename/]</a></li>
+    {/dede:channel}
+  </ul>
+</div>
+<!--top_sider-->
+<div class="top_main fr">
+<div class="fla png"><img src="/skin/images/img1.png" width="717" height="431"/></div>
+<div class="notice-wrap">
+  <div class="notice fl">
+    <h2 class="n_tl fl">最新公告：</h2>
+    <div id="n_con">
+      <div id="n_c_in">
+        <p id="n1p"><a  href="gg.php" style = "color:#fff" title="{dede:global.cfg_gg/}">{dede:global.cfg_gg/}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></p>
+        <p id="n2p"></p>
+      </div>
+    </div>
+  </div>
+  <!--notice-->
+  <form  name="formsearch" class="t_srh png fr" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+    <input type="hidden" name="kwtype" value="0" />
+    <input class="s_txt" type="text" value="请输入搜索关键字" name="q" id="SeaStr">
+    <input class="s_btn" type="image" name="submit" id="submit" src="/skin/images/icon1.jpg" />
+  </form>
+  <!--t_srh--> 
+</div>

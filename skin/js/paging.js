@@ -1,0 +1,12 @@
+$(function(){
+	$(".picUl-son:nth-child(3n)").css("margin-right","0");
+	$(".itemUl").find("li:empty").css({"background":"none","height":"20px","line-height":"20px","border-bottom":"none"});
+	$(".pcla-son").each(function(){
+			$(this).hover(
+					  function(){$(this).find("ul").slideDown(1000).stop(true,true);
+								 },
+					  function(){$(this).find("ul").slideUp(1000).stop(true,true);
+								 }
+					  )
+		});	
+})

@@ -1,0 +1,168 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!--
+                       (0 0)
+   +-------------oOO----(_)----------------+
+   |           Powered By 织梦猫           |
+   |            www.dedemao.com            |
+   |        E-mail:admin@dedemao.com       |
+   +--------------------------oOO----------+
+                      |__|__|
+                       || ||
+                      ooO Ooo
+-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<LINK href="/skin/css/global.css" rel=stylesheet>
+<LINK href="/skin/css/css.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/common.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/liscroll_gd.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/main.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/ac_runactivecontent.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="/skin/js/dd_belatedpng.js"></script>
+    <script type="text/javascript">
+    	DD_belatedPNG.fix(".png,.png img");
+    </script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!--notice-wrap--> 
+{dede:type typeid='2'}
+<div class="tl-a">
+  <div class="more fr"><a href="[field:typelink/]" title ="[field:typename/]">查看更多</a></div>
+  <h2 class="png">[field:typename/]<span>PRODUCTS</span></h2>
+</div>
+{/dede:type}
+</div>
+<!--top_main-->
+</div>
+</div>
+<!--top-->
+</div>
+<div class="main">
+  <div class="imain w980">
+    <div id="iroom-con">
+      <div id="iroom-con-in">
+        <ul id="r1p">
+          {dede:arclist typeid='2' row='8' titlelen='50' orderby='pubdate'}
+          <li class="iroom-son">
+            <div class="r-pic"><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" class = "PicAuto" width="198" height="146"/></a></div>
+            <div class="r-txt"><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></div>
+          </li>
+          {/dede:arclist}
+        </ul>
+        <ul id="r2p">
+        </ul>
+      </div>
+    </div>
+    <!--iroom-con-->
+    <div class="icontact fl">
+      <div class="tl-a">
+        <h2 class="png">联系我们<span>CONTACT</span></h2>
+      </div>
+      <div class="icontact-con"> <img src="/skin/images/img4.jpg" width="227" height="272"/> 全国服务热线：<br/>
+        <span>{dede:global.cfg_tel/}</span><br/>
+        地	址：{dede:global.cfg_add/}<br/>
+        电	话：{dede:global.cfg_tel/}<br/>
+        传	真：{dede:global.cfg_fax/}<br/>
+        邮	箱：{dede:global.cfg_email/}<br/>
+      </div>
+      <div class="icontact-more fr">{dede:type typeid='12'} <a href="[field:typelink/]" title = "查看详情">查看详细 >></a>{/dede:type} </div>
+    </div>
+    <!--icontact-->
+    <div class="inews fr">
+      <div class="inews-bg"> {dede:type typeid='13'}
+        <div class="tl-a">
+          <div class="more fr"><a href="[field:typelink/]" title="查看更多">查看更多</a></div>
+          <h2 class="png">[field:typename/]<span>NEWS</span></h2>
+        </div>
+        {/dede:type}
+        <div class="i_n_con">
+          <div class="i_n_c_huan fl"> 
+            <script language='javascript'>
+linkarr = new Array();
+picarr = new Array();
+textarr = new Array();
+var swf_width=217;
+var swf_height=163;
+//文字颜色|文字位置|文字背景颜色|文字背景透明度|按键文字颜色|按键默认颜色|按键当前颜色|自动播放时间|图片过渡效果|是否显示按钮|打开方式
+var configtg='0xffffff|0|0x3FA61F|5|0xffffff|0xC5DDBC|0x000033|2|3|1|_blank';
+var files = "";
+var links = "";
+var texts = "";
+//这里设置调用标记
+{dede:arclist typeid='14' row='3'}
+linkarr[[field:global.autoindex/]] = "[field:arcurl/]";
+picarr[[field:global.autoindex/]]  = "[field:litpic/]";
+textarr[[field:global.autoindex/]] = "[field:title function='html2text(@me)'/]";
+{/dede:arclist}
+for(i=1;i<picarr.length;i++){
+if(files=="") files = picarr[i];
+else files += "|"+picarr[i];
+}
+for(i=1;i<linkarr.length;i++){
+if(links=="") links = linkarr[i];
+else links += "|"+linkarr[i];
+}
+for(i=1;i<textarr.length;i++){
+if(texts=="") texts = textarr[i];
+else texts += "|"+textarr[i];
+}
+document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ swf_width +'" height="'+ swf_height +'">');
+document.write('<param name="movie" value="/skin/images/bcastr3.swf"><param name="quality" value="high">');
+document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+document.write('<param name="FlashVars" value="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'">');
+document.write('<embed src="/skin/images/bcastr3.swf" wmode="opaque" FlashVars="bcastr_file='+files+'&bcastr_link='+links+'&bcastr_title='+texts+'&bcastr_config='+configtg+'&menu="false" quality="high" width="'+ swf_width +'" height="'+ swf_height +'" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+</script> 
+          </div>
+          <div class="i_n_c_list fr">
+            <ul>
+              {dede:arclist typeid='13' row='5' titlelen='50' orderby='pubdate'}
+              <li><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a><span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></li>
+              {/dede:arclist}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--inews-bg--> 
+    </div>
+    <!--inews-->
+    <div class="icase fr"> {dede:type typeid='9'}
+      <div class="tl-a">
+        <div class="more fr"><a href="[field:typelink/]" title = "查看更多">查看更多</a></div>
+        <h2 class="png">[field:typename/]<span>CASE</span></h2>
+      </div>
+      {/dede:type}
+      <div id="icase-con">
+        <div id="icase-con-in">
+          <ul id="c1p">
+            {dede:arclist typeid='9' row='105' titlelen='50' orderby='pubdate'}
+            <li class="icase-son">
+              <div class="c-pic"><a href="[field:arcurl/]" title="[field:title/]" ><img src="[field:picname/]" alt="[field:title/]" class = "PicAuto" width="198" height="146"/></a></div>
+              <div class="c-txt"><a href="[field:arcurl/]" title="[field:title/]" >[field:title/]</a></div>
+            </li>
+            {/dede:arclist}
+          </ul>
+          <ul id="c2p">
+          </ul>
+        </div>
+      </div>
+      <!--icase-con--> 
+    </div>
+    <!--icase-->
+    <div class="clear"></div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/} 
+<script type="text/javascript" src="/skin/js/index.js"></script>
+</body>
+</html>

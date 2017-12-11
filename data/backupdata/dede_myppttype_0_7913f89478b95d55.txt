@@ -1,0 +1,2 @@
+INSERT INTO `dede_myppttype` VALUES('1','电脑端');
+INSERT INTO `dede_myppttype` VALUES('2','手机端');

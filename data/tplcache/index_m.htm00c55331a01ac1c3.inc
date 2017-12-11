@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("global","",303,329);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",382,412);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",449,476);
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",1223,1259);
+$z[3][4]['filename']="nav_m.htm";
+$z[4]=Array("global","",1403,1429);
+$z[4][4]['name']="cfg_webname";
+$z[5]=Array("global","",1485,1511);
+$z[5][4]['name']="cfg_webname";
+$z[6]=Array("global","",1784,1809);
+$z[6][4]['name']="cfg_cmsurl";
+$z[7]=Array("arclist","\r\n          <div class=\"swiper-slide\"><img src=\"[field:picname/]\"></div>\r\n          ",2391,2524);
+$z[7][4]['typeid']="14";
+$z[7][4]['row']="3";
+$z[8]=Array("channel","\r\n        <li class=\"s_b\"><a href=\"list.php?tid=[field:id/]\">[field:typename/]</a></li>\r\n        ",2690,2827);
+$z[8][4]['type']="top";
+$z[9]=Array("type","\r\n      <div class=\"more_i\"> <span>[field:typename/]</span><a  href=\"list.php?tid=[field:id/]\">更多</a> </div>\r\n      ",2909,3063);
+$z[9][4]['typeid']="4";
+$z[10]=Array("arclist","\r\n          <li><a href=\"view.php?aid=[field:id/]\"> <img src=\"[field:picname/]\" alt=\"[field:title/]\"> <span>[field:title/]</span> </a></li>\r\n          ",3153,3352);
+$z[10][4]['row']="4";
+$z[10][4]['typeid']="4";
+$z[11]=Array("global","",3494,3515);
+$z[11][4]['name']="cfg_dh";
+$z[12]=Array("channelartlist","\r\n    <div class=\"about_i\">\r\n      <div class=\"more_i\"> <span>{dede:field name='typename'/}</span><a  href=\"list.php?tid={dede:field name='id'/}\">更多</a></div>\r\n      <div class=\"clear\"></div>\r\n      <div class=\"about_i_c\"> {dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='cn_substr(html2text(@me),260)'/] {/dede:sql} ...</div>\r\n      <div class=\"clear\"></div>\r\n    </div>\r\n    ",3529,4002);
+$z[12][4]['typeid']="1,0";
+$z[13]=Array("channelartlist","\r\n    <div class=\"casei\">\r\n      <div class=\"more_i\"> <span>{dede:field name='typename'/}</span><a  href=\"list.php?tid={dede:field name='id'/}\">更多</a></div>\r\n      <div class=\"case_c\">\r\n        <ul>\r\n          {dede:arclist row='2' orderby='id'}\r\n          <li>\r\n            <div class=\"case_c_pic\"> <a href=\"view.php?aid=[field:id/]\" title=\"[field:title/]\"> <img src=\"[field:picname/]\" alt=\"[field:title/]\"> </a> </div>\r\n            <div class=\"case_c_content\">\r\n              <h2>[field:title/]</h2>\r\n              <span>[field:description function=\"cn_substr(@me,100)\"/]...</span> </div>\r\n          </li>\r\n          {/dede:arclist}\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    ",4008,4749);
+$z[13][4]['typeid']="5,0";
+$z[14]=Array("channelartlist","\r\n    <div class=\"case_i\">\r\n      <div class=\"more_i\"><span>{dede:field name='typename'/}</span><a  href=\"list.php?tid={dede:field name='id'/}\">更多</a></div>\r\n      <div class=\"clear\"></div>\r\n      <div class=\"clear\"></div>\r\n      <div class=\"case_i_c\">\r\n        <ul>\r\n          {dede:arclist row='3' orderby='id'}\r\n          <li> <a href=\"view.php?aid=[field:id/]\">\r\n            <h2>[field:title/]</h2>\r\n            </a> </li>\r\n          {/dede:arclist}\r\n        </ul>\r\n      </div>\r\n      <div class=\"clear\"></div>\r\n    </div>\r\n    ",4755,5348);
+$z[14][4]['typeid']="2,0";
+$z[15]=Array("channelartlist","\r\n    <div class=\"honor_i\">\r\n      <div class=\"more_i\"> <span>{dede:field name='typename'/}</span><a  href=\"list.php?tid={dede:field name='id'/}\">更多</a></div>\r\n      <div class=\"clear\"></div>\r\n      <div class=\"honor_i_c\">\r\n        <ul>\r\n          {dede:arclist row='4' orderby='id' titlelen='32'}\r\n          <li><a href=\"view.php?aid=[field:id/]\"> <img src=\"[field:picname/]\" alt=\"[field:title/]\" width=\"240px\" height=\"159px\"> <span class=\"sp1\">[field:title/]</span> </a></li>\r\n          {/dede:arclist}\r\n        </ul>\r\n        <div class=\"c\"></div>\r\n      </div>\r\n    </div>\r\n    ",5390,6032);
+$z[15][4]['typeid']="6,0";
+$z[16]=Array("global","",6183,6205);
+$z[16][4]['name']="cfg_add";
+$z[17]=Array("global","",6228,6252);
+$z[17][4]['name']="cfg_email";
+$z[18]=Array("global","",6275,6297);
+$z[18][4]['name']="cfg_tel";
+$z[19]=Array("include","",6426,6465);
+$z[19][4]['filename']="footer_m.htm";
+
+?>

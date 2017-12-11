@@ -1,0 +1,1 @@
+INSERT INTO `dede_kwpic` VALUES('48','57','http://news.youth.cn/gn/201608/./W020160801744328701094.jpg');

@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+
+<title>{dede:global.cfg_webname/}移动版</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/subpage.css" />
+<script type="text/javascript" src="/m/skin/js/jquery.js"></script>
+<style>
+.head {
+	background: #fd9a23
+}
+.foot {
+	background: #fd9a23
+}
+.nav {
+	background: #fd9a23
+}
+.nav_color {
+	background: #fd9a23
+}
+</style>
+<link rel="stylesheet" type="text/css" href="/m/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/swiper.css" />
+<script type="text/javascript" src="/m/skin/js/nav.js"></script>
+<script type="text/javascript" src="/m/skin/js/cart_icon.js"></script>
+<script type="text/javascript" src="/m/skin/js/swiper.js"></script>
+<script type="text/javascript" src="/m/skin/js/lihe.js"></script>
+</head>
+
+<body>
+{dede:include filename="nav_m.htm"/}
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <div class="header">
+    <div class="head"> <a href="/m" title="{dede:global.cfg_webname/}" class="logo"> <img src="/m/skin/img/logo_03.png" alt="{dede:global.cfg_webname/}"/> </a>
+      <div class="nav-btn iconfont">&#xe605;</div>
+      <div class="search_hl iconfont">&#xe600;</div>
+      <div class="search" style="display: block;">
+        <form class="am-topbar-form am-topbar-left am-form-inline am-topbar-right" role="search" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <input type="hidden" name="mobile" value="1" />
+          <input type="hidden" name="kwtype" value="0" />
+          <a class="xbtn iconfont" href="javascript:;">&#xe60f;</a>
+          <input type="text" name="q" class="search-lh-input" placeholder="请输入搜索关键词">
+          <input type="submit" class="search-lh-btn iconfont" value="&#xe600;">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="content content_new">
+    <div class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper"> {dede:arclist typeid='14' row='3'}
+          <div class="swiper-slide"><img src="[field:picname/]"></div>
+          {/dede:arclist} </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="nav_new boo">
+      <ul>
+        {dede:channel type='top'}
+        <li class="s_b"><a href="list.php?tid=[field:id/]">[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+      <div class="c"></div>
+    </div>
+    <div class="honor_i"> {dede:type typeid='4'}
+      <div class="more_i"> <span>[field:typename/]</span><a  href="list.php?tid=[field:id/]">更多</a> </div>
+      {/dede:type}
+      <div class="clear"></div>
+      <div class="honor_i_c">
+        <ul>
+          {dede:arclist row='4' typeid='4'}
+          <li><a href="view.php?aid=[field:id/]"> <img src="[field:picname/]" alt="[field:title/]"> <span>[field:title/]</span> </a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    <p class="boda"><a><font class="iconfont1">&#xe601;</font>TEL：{dede:global.cfg_dh/}</a></p>
+    {dede:channelartlist typeid='1,0'}
+    <div class="about_i">
+      <div class="more_i"> <span>{dede:field name='typename'/}</span><a  href="list.php?tid={dede:field name='id'/}">更多</a></div>
+      <div class="clear"></div>
+      <div class="about_i_c"> {dede:sql sql='Select content from dede_arctype where id=1'}[field:content function='cn_substr(html2text(@me),260)'/] {/dede:sql} ...</div>
+      <div class="clear"></div>
+    </div>
+    {/dede:channelartlist}
+    {dede:channelartlist typeid='5,0'}
+    <div class="casei">
+      <div class="more_i"> <span>{dede:field name='typename'/}</span><a  href="list.php?tid={dede:field name='id'/}">更多</a></div>
+      <div class="case_c">
+        <ul>
+          {dede:arclist row='2' orderby='id'}
+          <li>
+            <div class="case_c_pic"> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:picname/]" alt="[field:title/]"> </a> </div>
+            <div class="case_c_content">
+              <h2>[field:title/]</h2>
+              <span>[field:description function="cn_substr(@me,100)"/]...</span> </div>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+    {/dede:channelartlist}
+    {dede:channelartlist typeid='2,0'}
+    <div class="case_i">
+      <div class="more_i"><span>{dede:field name='typename'/}</span><a  href="list.php?tid={dede:field name='id'/}">更多</a></div>
+      <div class="clear"></div>
+      <div class="clear"></div>
+      <div class="case_i_c">
+        <ul>
+          {dede:arclist row='3' orderby='id'}
+          <li> <a href="view.php?aid=[field:id/]">
+            <h2>[field:title/]</h2>
+            </a> </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="clear"></div>
+    </div>
+    {/dede:channelartlist}
+    <div class="index_line"></div>
+    {dede:channelartlist typeid='6,0'}
+    <div class="honor_i">
+      <div class="more_i"> <span>{dede:field name='typename'/}</span><a  href="list.php?tid={dede:field name='id'/}">更多</a></div>
+      <div class="clear"></div>
+      <div class="honor_i_c">
+        <ul>
+          {dede:arclist row='4' orderby='id' titlelen='32'}
+          <li><a href="view.php?aid=[field:id/]"> <img src="[field:picname/]" alt="[field:title/]" width="240px" height="159px"> <span class="sp1">[field:title/]</span> </a></li>
+          {/dede:arclist}
+        </ul>
+        <div class="c"></div>
+      </div>
+    </div>
+    {/dede:channelartlist}
+    <div class="baoming">
+      <div class="clear"></div>
+      <div class="baodiv">
+        <label>联系我们</label>
+        <span>地址： {dede:global.cfg_add/}</span><span>邮箱： {dede:global.cfg_email/} </span><span>电话：{dede:global.cfg_tel/} </span></div>
+      <div class="c"></div>
+    </div>
+    <div class="beian"> 技术支持：织梦猫　 </div>
+  </div>
+  {dede:include filename="footer_m.htm"/} </div>
+</body>
+</html>

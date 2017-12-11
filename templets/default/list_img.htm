@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<LINK href="/skin/css/global.css" rel=stylesheet>
+<LINK href="/skin/css/css.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/common.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/liscroll_gd.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/main.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/ac_runactivecontent.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="/skin/js/dd_belatedpng.js"></script>
+    <script type="text/javascript">
+    	DD_belatedPNG.fix(".png,.png img");
+    </script>
+<![endif]-->
+</head>
+<body>
+{dede:include filename="head.htm"/} 
+<!--notice-wrap-->
+<div class="tl-a">
+  <div class="onlinks fr">当前位置：{dede:field name='position'/}</div>
+  <h2 class="png">{dede:field name='typename'/}</h2>
+</div>
+</div>
+<!--top_main-->
+</div>
+</div>
+<!--top-->
+</div>
+<div class="main">
+  <div class="imain pmain w980">
+    <div class="main_main fr">
+      <div class="picUl"> {dede:list pagesize ='9'}
+        <dl class="picUl-son">
+          <dt><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:picname/]" class="PicAuto" width="198" height="146" alt ="[field:title/]"  /></a></dt>
+          <dd><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></dd>
+        </dl>
+        {/dede:list}
+        <div class="clear"></div>
+      </div>
+      <!--picUl-->
+      
+      <div class="pagination-wrapper">
+        <div class="pagination"> {dede:pagelist listsize='5' listitem='index,end,pre,next,pageno'/} </div>
+      </div>
+      <!--fenyefh--> 
+    </div>
+    <!--main_main--> 
+    {dede:include filename="left.htm"/} 
+    <!--main_sider-->
+    <div class="clear"></div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/} 
+<script type="text/javascript" src="/skin/js/paging.js"></script>
+</body>
+</html>

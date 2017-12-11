@@ -1,0 +1,282 @@
+﻿
+/* 
+		@Author   pangu
+		@DATA     2011.10.08
+*/
+	
+/*@Style Reset*/
+body, div, dl, dt, dd, ul, ol, li, pre, code, form, fieldset, legend, input, button, textarea, blockquote, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "宋体";
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+html button::-moz-focus-inner {
+border-color:transparent!important;
+}
+html {
+	overflow-x: hidden;
+}
+input, button, textarea, select, optgroup, option {
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+}
+ul, li, dl, dt, dd, ol {
+	display: block;
+	list-style: none;
+}
+fieldset, img {
+	border: 0;
+}
+iframe {
+	background-image: none;
+}
+hr {
+	border: 0 #ccc solid;
+	border-top-width: 1px;
+	clear: both;
+	height: 0;
+}
+.clear {
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.input {
+	line-height: 30px;
+	height: 30px;
+	border: 1px solid #999999;
+	padding: 2px;
+}
+.checkbox {
+	line-height: 13px;
+	height: 13px;
+	width: 13px;
+	padding: 0px;
+	margin: 0px;
+}
+.absolute {
+	position: absolute;
+}
+.relative {
+	position: relative;
+}
+/*@Forbidden chrome autoAdjust fontSize*/
+html {
+	-webkit-text-size-adjust: none;
+}
+/*@Link*/
+a {
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+/*@Float*/
+.fl {
+	float: left;
+	display: inline;
+}
+.fr {
+	float: right;
+	display: inline;
+}
+/*@Padding*/
+.pad_0p {
+	padding: 0;
+}
+.pad_b10p {
+	padding-bottom: 10px;
+}
+/*@Page width*/
+.w980 {
+	width: 980px;
+	margin: 0 auto;
+}
+.w1000 {
+	width: 1000px;
+	margin: 0 auto;
+}
+/*@Margin*/
+.mar_0p {
+	margin: 0px;
+}
+.mar_t10p {
+	margin-top: 10px;
+}
+/*@Height*/
+.h105 {
+	height: 105px;
+}
+#zoom {
+	font-size: 14px;
+	line-height: 180%;
+}
+.ListType {
+	text-align: right;
+	padding-top: 5px;
+	color: #4a4a4a;
+	margin-bottom: 14px
+}
+.ListType a {
+	color: #4a4a4a;
+}
+.p_r_b {
+	height: 30px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 15px;
+	background: #88346d;
+	clear: both;
+	margin-top: 10px;
+}
+.p_r_b a {
+	color: #f1cef5
+}
+.right_box {
+	width: 100%;
+	clear: both;
+	margin: 0 auto;
+	color: #9c8e9e;
+}
+.right_box .picUl {
+	width: 710px;
+	height: auto!important;
+	padding: 0px 5px;
+}
+.right_box .picUl li {
+	float: left;
+	display: inline;
+	margin: 20px 30px 0px 0px;
+	width: 154px;
+	height: 210px;
+	overflow: hidden;
+}
+.right_box .picUl li div {
+	width: 154px;
+	height: 182px;
+	overflow: hidden;
+}
+.right_box .picUl li h3 {
+	line-height: 32px;
+	height: 32px;
+	font-size: 12px;
+	text-align: center;
+	font-weight: normal;
+}
+.right_box .picUl li h3 a {
+	color: #4a4a4a;
+}
+/* img_list
+-----------------------------------------------------------------------------------------------------*/
+.img_list {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+.img_list li {
+	padding: 8px 1px 0 7px;
+	float: left;
+	height: 170px;
+}
+.img_list li img {
+	border: 1px #b7b6b6 solid;
+	padding: 2px 2px;
+}
+.img_list li span {
+	display: block;
+	background: url(../images/ico_10.gif) 15px center no-repeat;
+	padding: 0 0 0 25px;
+	line-height: 24px;
+}
+/* txt_list
+-----------------------------------------------------------------------------------------------------*/
+
+.list_txt {
+	width: 100%;
+	padding-top: 20px;
+}
+.list_txt li {
+	background: url(../images/ico_10.gif) 10px 10px no-repeat;
+	padding: 0 0 0 25px;
+	border-bottom: 1px #CCC dotted;
+	line-height: 28px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+}
+.list_txt li a {
+	color: #000;
+}
+.list_txt li span {
+	position: absolute;
+	right: 10px;
+	top: 0;
+}
+.list_txt li p {
+	color: #808080;
+	font-size: 12px;
+}
+/* txt_view
+-----------------------------------------------------------------------------------------------------*/
+.right_h5 {
+	font-size: 14px;
+	text-align: center;
+	line-height: 18px;
+	padding: 8px 0 8px 0;
+	margin: 0;
+	color: #006ea8;
+}
+.fytime {
+	width: 100%;
+	text-align: center;
+	color: #bfbfbf;
+}
+.share {
+	width: 220px;
+	margin: 0 auto;
+	text-align: center;
+}
+.fx_span {
+	color: #006ea8;
+	line-height: 16px;
+}
+.txt_list_img {
+	text-align: center;
+	padding: 8px 0;
+}
+.txt_list_img img {
+	border: 1px #ccc solid;
+	padding: 2px 2px;
+}
+.txt_list_p {
+	width: 95%;
+	margin: 0 auto;
+	line-height: 24px;
+}
+.pACBook {
+	line-height: 28px;
+	padding: 30px 20px;
+	color: #333;
+	font-size: 14px;
+}
+.pACBook p {
+	font-size: 14px;
+}
+.pACBook div {
+	color: #9c8e9e
+}

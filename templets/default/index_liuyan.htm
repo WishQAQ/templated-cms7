@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<LINK href="/skin/css/global.css" rel=stylesheet>
+<LINK href="/skin/css/css.css" rel=stylesheet>
+<LINK href="/skin/css/style.css" rel=stylesheet>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/common.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/liscroll_gd.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/main.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/ac_runactivecontent.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/formvalid.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/fv_onblur.js"></script>
+<script language="JavaScript" type="text/javascript" src="/skin/js/jquery.jbox-2.3.min.js"></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="/skin/js/dd_belatedpng.js"></script>
+    <script type="text/javascript">
+    	DD_belatedPNG.fix(".png,.png img");
+    </script>
+<![endif]-->
+</head>
+<script language="javascript">
+function ckvaild (inp) {
+		$.ajax({type:"GET", url:"ajax.php?r="+Math.random()+'&vaild='+inp.value, dataType:"text",async:false,error:function(err){alert(err);},success:function (msg){
+			r = msg;
+		}}); 
+		if (r==0) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+</script>
+<body>
+{dede:include filename="head.htm"/} 
+<!--notice-wrap-->
+<div class="tl-a">
+  <div class="onlinks fr">当前位置：{dede:field name='position'/}</div>
+  <h2 class="png">{dede:field name='typename'/}</h2>
+</div>
+</div>
+<!--top_main-->
+</div>
+</div>
+<!--top-->
+</div>
+<div class="main">
+  <div class="imain pmain w980">
+    <div class="main_main fr">
+      <div class="pACBook">
+        <div class="message">
+          <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+            <input type="hidden" name="action" value="post" />
+            <input type="hidden" name="diyid" value="1" />
+            <input type="hidden" name="do" value="2" />
+            <ul>
+              <li>
+                <p class="message_title"><span class="c_red">* </span>姓名：</p>
+                <p class="message_content">
+                  <input name="name" id="name" type="text" size="30" maxlength="10" valid="required|limit" errmsg="请输入姓名！|姓名长度必须在1-10个字符之间！" max="10" min="1" />
+                </p>
+                <span class="errMsg" id="errMsg_nickname"></span> </li>
+              <li>
+                <p class="message_title"><span class="c_red">* </span>手机：</p>
+                <p class="message_content">
+                  <input type="text" name="tel" size="30" id="tel" maxlength="11" valid="required|isMobile|limit" errmsg="请输入联系电话！|联系电话格式有误！|联系电话长度必须为11个字符！" max="11" min="11" />
+                </p>
+                <span class="errMsg" id="errMsg_telephone"></span> </li>
+              <li>
+                <p class="message_title">邮箱地址：</p>
+                <p class="message_content">
+                  <input name="email" id="email" type="text" size="30" valid="isEmail" errmsg="邮箱格式有误！" />
+                  <span class="errMsg" id="errMsg_email"></span></p>
+              </li>
+              <li>
+                <p class="message_title"><span class="c_red">* </span>主题：</p>
+                <p class="message_content">
+                  <input name="title" id="title" style="width:350px;" type="text"  valid="required" errmsg="请输入主题！"  />
+                </p>
+                <span class="errMsg" id="errMsg_telephone"></span> </li>
+              <li class="contentb">
+                <p class="message_title"><span class="c_red">* </span>留言内容：</p>
+                <p class="message_content">
+                  <textarea name="content" id="content" cols="45" rows="5"  valid="required" errmsg="请输入内容！" ></textarea>
+                </p>
+                <span class="errMsg" id="errMsg_content"></span> </li>
+              <input type="hidden" name="dede_fields" value="name,text;tel,text;email,text;content,text;title,text" />
+              <input type="hidden" name="dede_fieldshash" value="5dd36822c61a9d051acca1466b5819a1" />
+              <li class="yzm">
+                <p class="message_sub">
+                  <button type="submit" name="submit"><img src="/skin/images/book_sub.jpg" width="106" height="36"></button>
+                </p>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--main_main--> 
+    {dede:include filename="left.htm"/} 
+    <!--main_sider-->
+    <div class="clear"></div>
+  </div>
+</div>
+{dede:include filename="footer.htm"/} 
+<script type="text/javascript" src="/skin/js/paging.js"></script>
+</body>
+</html>

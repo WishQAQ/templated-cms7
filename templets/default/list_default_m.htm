@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="telephone=no" name="format-detection" />
+
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/master.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/subpage.css" />
+<link rel="stylesheet" type="text/css" href="/m/skin/css/child_vip.css" />
+<script type="text/javascript" src="/m/skin/js/jquery.js"></script>
+<style>
+.head {
+	background: #fd9a23
+}
+.foot {
+	background: #fd9a23
+}
+.nav {
+	background: #fd9a23
+}
+.nav_color {
+	background: #fd9a23
+}
+</style>
+<script type="text/javascript" src="/m/skin/js/nav.js"></script>
+<script type="text/javascript" src="/m/skin/js/cart_icon.js"></script>
+</head>
+
+<body>
+{dede:include filename="nav_m.htm"/}
+<div class="allpage">
+  <div class="black-fixed iconfont">&#xe60f;</div>
+  <div class="header">
+    <div class="head"> <a href="/m" title="首页" class="home-btn commonfont">&#xe608;</a>
+      <p class="top-title">{dede:field.typename/}</p>
+      <div {dede:field name=typeid runphp="yes"}
+global $dsql;
+$sql = "SELECT id From `#@__arctype` WHERE reid='@me' And ishidden<>1 order by sortrank asc limit 0, 100 ";
+$row = $dsql->GetOne($sql);
+        @me=is_array($row)?'none':'class="class-btn"';
+        {/dede:field}>
+        <div class="class-btn"><span class="commonfont">&#xe60a;</span>分类</div>
+      </div>
+      <div class="nav-btn commonfont">&#xe60b;</div>
+    </div>
+    <div class="type">
+      <h1>分类：</h1>
+      <ul>
+        {dede:channel type='son' row='10'}
+        <li> <a href="list.php?tid=[field:id/]" >[field:typename/]</a> <span class="commonfont class-down">&#xe60c;</span>
+          <dl>
+          </dl>
+        </li>
+        {/dede:channel}
+      </ul>
+    </div>
+  </div>
+  <div class="content">
+    <ul class="common_news" id="contentArea">
+      {dede:list pagesize='6'}
+      <li class="news4"> <a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:litpic/]" alt="[field:title/]"> <span>[field:title/]</span> </a> </li>
+      [field:global runphp='yes' name=autoindex]
+      $a="
+      <div class='clear'></div>
+      ";
+      $b="";
+      if ((@me%2)==0 && @me!=30) @me=$a;
+      else  @me=$b;
+      [/field:global]
+      {/dede:list}
+    </ul>
+    <div class="pagination-wrapper">
+      <div class="pagination"> {dede:pagelist listsize='5' listitem='index,end,pre,next,pageno'/} </div>
+    </div>
+  </div>
+  {dede:include filename="footer_m.htm"/} </div>
+</body>
+</html>
